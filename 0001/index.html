@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h1>Git工作流</h1>
+                    <h3>Presented by Zhang, Zijian</h3>
+                </section>
+				<section>
+                    <h2>版本控制？but why？</h2>
+                    <div style="position: relative; left: 0; top:0;">
+                        <span style="width=auto"class="fragment"><img style="top: 0; left:0"src="imgs/death-of-designer.jpg"></span>
+                        <span style="position: absolute; top:-100; left:0; right:0;" class="fragment"><img src="imgs/wtf.jpg"></span>
+                    </div>
+                </section>
+                <section>
+                    <h2>项目经理说：“要有结构”</h2>
+                    <div><img src="imgs/revision-control.svg"></div>
+                </section>
+                <section>
+                    <h3>如雷贯耳的名字</h3>
+                    <div>
+                        <p class="fragment">最早的：Source Code Control System (1972)</p>
+                        <p class="fragment">C-S架构：Subversion (2000)</p>
+                        <span style="position:relative"class="fragment">
+                            <p>分布式架构：Git (2005)</p>
+                            <span style="position:absolute;float:center" class="fragment">
+                                <img src="imgs/linus.png" height=200>
+                            </span>
+                    </div>
+                </section>
+                <section>
+                    <h2>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
